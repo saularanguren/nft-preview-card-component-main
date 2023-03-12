@@ -33,7 +33,7 @@ body{
 .container__nft{
     width: 90%;
     max-width: 405px;
-    height: 670px;
+    height: 700px;
 
     padding: 1.9em;
     border-radius: 22px;
@@ -64,6 +64,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .container__nft__info{
@@ -78,8 +79,26 @@ body{
     flex-basis: 45%;
 }
 
+.container__nft__info hr{
+    width: 100%;
+    height: .2em;
+    margin: 1.5em 0;
+    border: none;
+
+    background-color: var(--color5);
+}
+
 .container__nft__info__main{
     margin-top: 2.2em;
+}
+
+.container__nft__info__main h1{
+    cursor: pointer;
+    transition: .3s ease color;
+}
+
+.container__nft__info__main h1:hover{
+    color: var(--color2);
 }
 
 .container__nft__info__main p{
@@ -117,6 +136,40 @@ body{
     gap: .5em;
 
     color: var(--color1);
+}
+
+.container__nft__info__footer{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.container__nft__info__footer p{
+    font-size: 18px;
+    color: var(--color1);
+}
+
+.container__nft__info__footer p span{
+    color: var(--color6);
+    cursor: pointer;
+    transition: .3s ease color;
+}
+
+.container__nft__info__footer p span:hover{
+    color: var(--color2);
+}
+
+.container__nft__info__footer img{
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+
+    border: 2px solid var(--color6);
+    border-radius: 50%;
 }
 /* End NFT */
 
