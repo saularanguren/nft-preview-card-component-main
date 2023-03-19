@@ -15,28 +15,27 @@
 }
 
 body{
-    background-color: var(--color3);
-    font-family: var(--family);
-    color: var(--color6);
-
-    width: 100%;
     min-height: 100vh;
-    padding: 5em 0;
+    padding: 6em 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: columN
+    flex-direction: column;
+
+    background-color: var(--color3);
+    font-family: var(--family);
+    color: var(--color6);
 }
 
 /* NFT */
 .container__nft{
-    width: 90%;
-    max-width: 405px;
-    height: 700px;
+    width: 92%;
+    max-width: 390px;
+    height: auto;
 
-    padding: 1.9em;
-    border-radius: 22px;
+    padding: 1.2em;
+    border-radius: 1em;
     overflow: hidden;
 
     display: flex;
@@ -110,9 +109,9 @@ body{
 
 .container__nft__info hr{
     width: 100%;
-    height: .2em;
-    margin: 1.5em 0;
+    height: .1em;
     border: none;
+    margin-bottom: 1em;
 
     background-color: var(--color5);
 }
@@ -124,6 +123,8 @@ body{
 .container__nft__info__main h1{
     cursor: pointer;
     transition: .5s ease color;
+    font-size: 24px;
+    margin-bottom: 1em;
 }
 
 .container__nft__info__main h1:hover{
@@ -134,15 +135,13 @@ body{
     font-size: 18px;
     line-height: 1.7em;
     color: var(--color1);
-    
-    margin-top: 1em;
 }
 
 .container__nft__info__items{
     width: 100%;
     height: auto;
 
-    margin-top: 1em;
+    margin: 1.2em 0;
 
     display: flex;
     justify-content: space-between;
@@ -158,6 +157,10 @@ body{
     color: var(--color2);
 }
 
+.item__price h2{
+    font-size: 18px;
+}
+
 .item__date{
     display: flex;
     justify-content: center;
@@ -165,6 +168,10 @@ body{
     gap: .5em;
 
     color: var(--color1);
+}
+
+.item__date h2{
+    font-size: 18px;
 }
 
 .container__nft__info__footer{
@@ -175,6 +182,7 @@ body{
     justify-content: start;
     align-items: center;
     gap: 1em;
+    padding-bottom: .5em;
 }
 
 .container__nft__info__footer p{
@@ -193,11 +201,20 @@ body{
 }
 
 .container__nft__info__footer img{
-    width: 3em;
-    height: 3em;
+    width: 2.7em;
+    height: 2.7em;
     object-fit: cover;
 
     border: 2px solid var(--color6);
     border-radius: 50%;
 }
 /* End NFT */
+
+/* Media Query For Tablet and Desktop */
+@media only screen and (min-width: 768px){
+    .container__nft{
+        padding: 1.5em;
+        box-shadow: 0 20px 25px rgba(13, 25, 43, 0.800);
+    }
+}
+/* End Media Query For Tablet and Desktop */
