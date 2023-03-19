@@ -48,7 +48,7 @@ body{
 
 .container__nft__img{
     width: 100%;
-    height: 100%;
+    height: 80%;
 
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ body{
     cursor: pointer;
     transition: .5s ease color;
     font-size: 24px;
-    margin-bottom: 1em;
+    margin-bottom: .7em;
 }
 
 .container__nft__info__main h1:hover{
@@ -141,7 +141,7 @@ body{
     width: 100%;
     height: auto;
 
-    margin: 1.2em 0;
+    margin: 1em 0;
 
     display: flex;
     justify-content: space-between;
@@ -182,7 +182,7 @@ body{
     justify-content: start;
     align-items: center;
     gap: 1em;
-    padding-bottom: .5em;
+    margin: .5em 0;
 }
 
 .container__nft__info__footer p{
