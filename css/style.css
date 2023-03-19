@@ -32,7 +32,7 @@ body{
 .container__nft{
     width: 92%;
     max-width: 390px;
-    height: auto;
+    height: 80%;
 
     padding: 1.2em;
     border-radius: 1em;
